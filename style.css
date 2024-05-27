@@ -5,17 +5,17 @@
 }
 
 body {
-  background-color: rgb(36, 36, 36);
+  background-color: #fefae0;
 }
 
 h1 {
   text-align: center;
-  color: white;
+  color: #d4a373;
 }
 .remaning-items,
 .completed-items {
   margin: 1%;
-  background-color: white;
+  background-color: #e9edc9;
 }
 button {
   font-size: larger;
@@ -39,15 +39,17 @@ button {
 }
 
 button:hover {
-  background-color: rgb(211, 208, 208);
+  background-color: #d4a373;
+  color: #fefae0;
   box-shadow: 10px 10px 50px white;
 }
 .To-Do-List,
-.completed-list {
-  height: 300px;
-  width: 50%;
-  background-color: white;
-  margin: 0% 2%;
+.completed-lists {
+  height: 400px;
+
+  width: 100%;
+  margin: 0% 5%;
+  overflow-y: auto;
 }
 
 h4 {
@@ -62,9 +64,11 @@ h4 {
   display: flex;
   justify-content: space-evenly;
 }
+
 .remaning-items,
 .completed-items {
   margin: 1%;
   background-color: white;
-  width: 50%;
+  width: 100%;
+  height: fit-content;
 }
