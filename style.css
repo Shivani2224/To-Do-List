@@ -42,7 +42,29 @@ button:hover {
   background-color: rgb(211, 208, 208);
   box-shadow: 10px 10px 50px white;
 }
-.To-Do-List {
-  height: 20%;
+.To-Do-List,
+.completed-list {
+  height: 300px;
+  width: 50%;
   background-color: white;
+  margin: 0% 2%;
+}
+
+h4 {
+  background-color: rgb(51, 51, 51);
+  color: white;
+  border: white;
+  border-style: double;
+  text-align: center;
+}
+
+.items {
+  display: flex;
+  justify-content: space-evenly;
+}
+.remaning-items,
+.completed-items {
+  margin: 1%;
+  background-color: white;
+  width: 50%;
 }
