@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do List</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="./script.js" defer>
-    </script>
+
 </head>
 
 <body>
@@ -16,7 +15,11 @@
     </h1>
     <div class="btn" style="width: 100%;">
         <div class="add">
-            <button>Add Item</button>
+            <h4>
+                Add Task to your list
+            </h4>
+            <input type="text" id="input" >
+            <button id="add">Add Item</button>
         </div>
         <div class="delete">
             <button>Delete Item</button>
@@ -26,7 +29,7 @@
         <div class="remaning-items">
             <h4>Incompleted Items</h4>
             <div id="To-Do-List" class="To-Do-List">
-                <ul id="task-list">
+                <ul id="task-list" class="task-list">
 
                 </ul>
             </div>
@@ -39,6 +42,8 @@
             </div>
         </div>
     </div>
+    <script src="./script.js" defer>
+    </script>
 </body>
 
 </html>

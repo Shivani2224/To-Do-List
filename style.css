@@ -12,11 +12,7 @@ h1 {
   text-align: center;
   color: #d4a373;
 }
-.remaning-items,
-.completed-items {
-  margin: 1%;
-  background-color: #e9edc9;
-}
+
 button {
   font-size: larger;
 
@@ -42,6 +38,7 @@ button:hover {
   background-color: #d4a373;
   color: #fefae0;
   box-shadow: 10px 10px 50px white;
+  cursor: pointer;
 }
 .To-Do-List,
 .completed-lists {
@@ -68,8 +65,12 @@ h4 {
 
 .remaning-items,
 .completed-items {
-  margin: 1%;
   background-color: white;
   width: 100%;
   height: fit-content;
+}
+ul {
+  list-style-type: square;
+  word-wrap: break-word;
+  margin-right: 10px;
 }
