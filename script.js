@@ -8,9 +8,12 @@ const addItemHandler = () => {
     outputElement.textContent = userInput;
     taskList.appendChild(outputElement);
     console.log(outputElement);
+    document.getElementById("input").value = "";
   } else {
     alert("Please enter text in task list");
   }
 };
+
+
 
 additem.addEventListener("click", addItemHandler);

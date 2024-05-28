@@ -66,11 +66,24 @@ h4 {
 .remaning-items,
 .completed-items {
   background-color: white;
-  width: 100%;
+  width: 50%;
   height: fit-content;
+  margin-left: 10px;
 }
 ul {
-  list-style-type: square;
   word-wrap: break-word;
   margin-right: 10px;
+}
+
+ul li::before {
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+li:hover,
+li:active {
+  font-size: 120%;
+  cursor: pointer;
+  
 }
