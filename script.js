@@ -6,6 +6,14 @@ const addItemHandler = () => {
   if (userInput.trim() !== "") {
     const outputElement = document.createElement("li");
     outputElement.textContent = userInput;
+
+    outputElement.addEventListener("click", () => {
+      if (outputElement.style.textDecoration === "line-through") {
+        outputElement.style.textDecoration = "none";
+      } else {
+        outputElement.style.textDecoration = "line-through";
+      }
+    });
     taskList.appendChild(outputElement);
     console.log(outputElement);
     document.getElementById("input").value = "";
@@ -13,7 +21,5 @@ const addItemHandler = () => {
     alert("Please enter text in task list");
   }
 };
-
-
 
 additem.addEventListener("click", addItemHandler);

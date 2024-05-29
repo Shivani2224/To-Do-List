@@ -1,89 +1,71 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 body {
   background-color: #fefae0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
 
 h1 {
-  text-align: center;
   color: #d4a373;
+  margin-bottom: 20px;
+}
+
+.inputDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 5px;
+  margin-bottom: 10px;
+  font-size: 16px;
 }
 
 button {
-  font-size: larger;
-
-  letter-spacing: 1px;
-  width: 100%;
-}
-.add {
-  width: 20rem;
-  text-align: center;
-  margin: 0px 5px;
-}
-.delete {
-  width: 20rem;
-  text-align: center;
-}
-
-.btn {
-  display: flex;
-  justify-content: space-evenly;
+  padding: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 50%;
 }
 
 button:hover {
   background-color: #d4a373;
   color: #fefae0;
-  box-shadow: 10px 10px 50px white;
-  cursor: pointer;
-}
-.To-Do-List,
-.completed-lists {
-  height: 270px;
-  border: solid;
-  border-color: #d4a373;
-  width: 90%;
-  margin: 0% 5%;
-  overflow-y: auto;
-}
-
-h4 {
-  background-color: rgb(51, 51, 51);
-  color: white;
-  border: white;
-  border-style: double;
-  text-align: center;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .items {
-  display: flex;
-  justify-content: space-evenly;
+  width: 100%;
+  max-width: 500px;
 }
 
-.remaning-items,
-.completed-items {
-  background-color: white;
-  width: 50%;
-  height: fit-content;
-  margin-left: 10px;
+h4 {
+  text-align: center;
+  margin-bottom: 10px;
 }
+
 ul {
-  word-wrap: break-word;
-  margin-right: 10px;
+  list-style-type: square;
+  padding: 0;
+  background-color: white;
 }
 
-ul li::before {
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
-}
-
-li:hover,
-li:active {
-  font-size: 120%;
+li {
+  padding: 10px;
+  border-bottom: 1px solid #d4a373;
   cursor: pointer;
-  
+}
+
+li:hover {
+  background-color: #f0e6d2;
 }
