@@ -9,6 +9,7 @@ const addItemHandler = () => {
     const cancelbtn = document.createElement("button");
     const textOnButton = document.createTextNode(" x ");
     cancelbtn.appendChild(textOnButton);
+
     cancelbtn.id = "cancel-id";
     outputElement.textContent = userInput;
 
@@ -27,6 +28,7 @@ const addItemHandler = () => {
     console.log(outputElement);
     cancelbtn.addEventListener("click", () => {
       taskList.removeChild(outputElement);
+      outputElement .removeChild(cancelbtn);
     });
     document.getElementById("input").value = "";
   } else {
