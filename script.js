@@ -6,29 +6,31 @@ const addItemHandler = () => {
 
   if (userInput.trim() !== "") {
     const outputElement = document.createElement("li");
+    const listText = document.createElement("span");
     const cancelbtn = document.createElement("button");
     const textOnButton = document.createTextNode(" x ");
     cancelbtn.appendChild(textOnButton);
 
     cancelbtn.id = "cancel-id";
-    outputElement.textContent = userInput;
+    listText.textContent = userInput;
 
     console.log(cancelbtn);
 
-    outputElement.addEventListener("click", () => {
-      if (outputElement.style.textDecoration === "line-through") {
-        outputElement.style.textDecoration = "none";
+    listText.addEventListener("click", () => {
+      if (listText.style.textDecoration === "line-through") {
+        listText.style.textDecoration = "none";
       } else {
-        outputElement.style.textDecoration = "line-through";
-        outputElement.style.classList.toggle("checked");
+        listText.style.textDecoration = "line-through";
+        listText.style.classList.toggle("checked");
       }
     });
+    outputElement.appendChild(listText);
     taskList.appendChild(outputElement);
     outputElement.appendChild(cancelbtn);
     console.log(outputElement);
     cancelbtn.addEventListener("click", () => {
       taskList.removeChild(outputElement);
-      outputElement .removeChild(cancelbtn);
+      outputElement.removeChild(cancelbtn);
     });
     document.getElementById("input").value = "";
   } else {
