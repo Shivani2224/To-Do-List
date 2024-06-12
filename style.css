@@ -64,8 +64,33 @@ li {
   padding: 10px;
   border-bottom: 1px solid #d4a373;
   cursor: pointer;
+  display: flex;
+  justify-content: space-between;
 }
 
 li:hover {
   background-color: #f0e6d2;
+}
+ul li:checked {
+  content: "";
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+  text-decoration: line-through;
+}
+#cancel-id {
+  width: 30px;
+  border: none;
+  background-color: white;
+}
+
+#cancel-id:hover {
+  background-color: #f0e6d2;
+  color: black;
 }
